@@ -1,0 +1,19 @@
+.clock {
+  margin: 2rem auto;
+  width: 50vw;
+  border-radius: 20px;
+  border-top: 0.5px solid rgba(217, 217, 217, 0.1);
+  border-left: 0.5px solid rgba(217, 217, 217, 0.1);
+  background: #fdfdfd;
+  box-shadow: 8px 8px 16px #d7d7d7, -8px -8px 16px #ffffff;
+}
+
+.title {
+  color: tomato;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  color: lightblue;
+}
