@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../../styles/clock.scss";
 
 class Clock extends Component {
+  
   constructor(props) {
     super(props);
     // Estado privado del component
@@ -13,15 +14,19 @@ class Clock extends Component {
       apellidos: "San José",
     };
   }
+
   componentDidMount() {
     this.timerID = setInterval(() => this.tick(), 1000);
   }
+
   componentWillUnmount() {
     clearInterval(this.timerID);
   }
+
   render() {
     return (
       <div className="clock">
+        <h1>Clock function</h1>
         <h2 className="subtitle">
           Hora Actual:
           {this.state.fecha.toLocaleTimeString()}
@@ -33,6 +38,7 @@ class Clock extends Component {
       </div>
     );
   }
+
   tick() {
     this.setState((prevState) => {
       let edad = prevState.edad + 1;
